@@ -1,0 +1,10 @@
+
+target 'AAAlertController_Example' do
+  pod 'AAAlertController', :path => '../'
+
+  target 'AAAlertController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
