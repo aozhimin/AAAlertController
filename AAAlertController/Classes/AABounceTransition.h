@@ -6,8 +6,15 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+#import "AABaseTransition.h"
 
-@interface AABounceTransition : NSObject
+NS_ASSUME_NONNULL_BEGIN
+
+/**
+ 弹跳动画效果的过渡动效类
+ */
+@interface AABounceTransition : AABaseTransition
 
 @end
+
+NS_ASSUME_NONNULL_END

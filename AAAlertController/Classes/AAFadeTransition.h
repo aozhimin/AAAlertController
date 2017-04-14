@@ -6,8 +6,15 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+#import "AABaseTransition.h"
 
-@interface AAFadeTransition : NSObject
+NS_ASSUME_NONNULL_BEGIN
+
+/**
+ 渐变动画效果的过渡动效类
+ */
+@interface AAFadeTransition : AABaseTransition
 
 @end
+
+NS_ASSUME_NONNULL_END
