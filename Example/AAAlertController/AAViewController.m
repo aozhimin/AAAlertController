@@ -30,6 +30,7 @@ typedef NS_ENUM(NSUInteger, AATableViewCellType) {
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     AAAlertAnimationOptions animationOption;
     if (indexPath.row == AATableViewCellTypeFade) {
         animationOption = AAAlertAnimationOptionFade;
