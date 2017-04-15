@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1525E2691EA0CBE80067BD3B /* AAPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1525E2681EA0CBE80067BD3B /* AAPresentViewController.m */; };
 		1F3323D8015091098DD584A1 /* libPods-AAAlertController_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4557224ED91CF7E4DD830BD1 /* libPods-AAAlertController_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -38,8 +39,10 @@
 
 /* Begin PBXFileReference section */
 		0AB618D85B738C62C67F0669 /* Pods-AAAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAAlertController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AAAlertController_Tests/Pods-AAAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1525E2671EA0CBE80067BD3B /* AAPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPresentViewController.h; sourceTree = "<group>"; };
+		1525E2681EA0CBE80067BD3B /* AAPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPresentViewController.m; sourceTree = "<group>"; };
 		4557224ED91CF7E4DD830BD1 /* libPods-AAAlertController_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AAAlertController_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4914BDC8E664AC6597F92DFE /* AAAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AAAlertController.podspec; path = ../AAAlertController.podspec; sourceTree = "<group>"; };
+		4914BDC8E664AC6597F92DFE /* AAAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AAAlertController.podspec; path = ../AAAlertController.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* AAAlertController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AAAlertController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,8 +64,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A97FB71059F7B1B7AD1D5CA7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C7FDC5C1C65189915343C73C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A97FB71059F7B1B7AD1D5CA7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C7FDC5C1C65189915343C73C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C98754B7C2138DA0B964FD23 /* libPods-AAAlertController_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AAAlertController_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E963BC29BDCCBEF379CF88 /* Pods-AAAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAAlertController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AAAlertController_Example/Pods-AAAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DACE0246A77D6DB1ED5950AC /* Pods-AAAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAAlertController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AAAlertController_Example/Pods-AAAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* AAViewController.h */,
 				6003F5A6195388D20070C39A /* AAViewController.m */,
+				1525E2671EA0CBE80067BD3B /* AAPresentViewController.h */,
+				1525E2681EA0CBE80067BD3B /* AAPresentViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -396,6 +401,7 @@
 			files = (
 				6003F59E195388D20070C39A /* AAAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* AAViewController.m in Sources */,
+				1525E2691EA0CBE80067BD3B /* AAPresentViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

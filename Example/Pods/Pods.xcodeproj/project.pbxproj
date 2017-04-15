@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BA8718F431823A8D4D8CEE8861A5E24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		1525E25D1EA0C4780067BD3B /* AABaseTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1525E25B1EA0C4780067BD3B /* AABaseTransition.h */; };
-		1525E25E1EA0C4780067BD3B /* AABaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1525E25C1EA0C4780067BD3B /* AABaseTransition.m */; };
-		1525E2611EA0C5120067BD3B /* AAFadeTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1525E25F1EA0C5120067BD3B /* AAFadeTransition.h */; };
-		1525E2621EA0C5120067BD3B /* AAFadeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1525E2601EA0C5120067BD3B /* AAFadeTransition.m */; };
-		1525E2651EA0C5200067BD3B /* AABounceTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1525E2631EA0C5200067BD3B /* AABounceTransition.h */; };
-		1525E2661EA0C5200067BD3B /* AABounceTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1525E2641EA0C5200067BD3B /* AABounceTransition.m */; };
-		2E4DC5649EBDC361385F36D62D4B4CFE /* AAAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B54EF0624E84DE4902F4D8F9C188 /* AAAlertController.m */; };
+		08430CD9C52283CABB5672D8D57BF553 /* AABaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E8A3B83D786E781B8BF9B4F36CCE5 /* AABaseTransition.m */; };
+		0C6F68465C463D279017F6AA1D9C3A93 /* AAAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578EDE912F39374983181F0B59BF55F4 /* AAAlertController.m */; };
+		1561172F1EA0D2B3004053AD /* AABounceTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1561172D1EA0D2B3004053AD /* AABounceTransition.h */; };
+		156117301EA0D2B3004053AD /* AABounceTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1561172E1EA0D2B3004053AD /* AABounceTransition.m */; };
 		355C20A5CDDEC9A7FBA7DDC52F2BB409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		3C71AAE6E3FEDFEBAA305A1981527DF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5CEF2830DA2CA5CB8670242CD50CF429 /* AAAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ABEBCBA0A0DFA5A74F492F75FA1BE50 /* AAAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C08E518C13ECC545DFD35E65664BE64 /* Pods-AAAlertController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FBA80980AE18A5C330CBBFBF80E548 /* Pods-AAAlertController_Example-dummy.m */; };
-		9C8C5BAD52F40E8211EE120F81621AFC /* AAAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F5C063093476706C82C9299A73B030 /* AAAlertController-dummy.m */; };
-		9E639F6D986EBCBF42892CA310DB29F9 /* AAAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD8A805E5B4E7201B28B436502DB72A /* AAAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70664FA970F33C2FDA65D86C8F8DF7F5 /* AABaseTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E8ECD360AC6B70D899A2D0E95426D17 /* AABaseTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92704E0317203D970B86E8439AB30E06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		95826856D24DB56662E45839803B66FF /* AAFadeTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 53DEA51EE3510E0DE6E6391460C816B7 /* AAFadeTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C632BC7424351078016C5C4D72F2F985 /* Pods-AAAlertController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA420414BBAFF43703235B257EF71AC0 /* Pods-AAAlertController_Tests-dummy.m */; };
+		C6B531DE738FD42F4544C06AFDF8ED7B /* AAAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F5C063093476706C82C9299A73B030 /* AAAlertController-dummy.m */; };
+		F6B51D23BEA8AA1903DFF2DBE59F9EF0 /* AAFadeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EE00C101FA613C762F737E172AFE5F21 /* AAFadeTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,25 +28,24 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 66BCFB66EA5E1DC248420BECC681A3A2;
+			remoteGlobalIDString = 890EEBB4278F4661A24FF7A837F2B398;
 			remoteInfo = AAAlertController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02A3B54EF0624E84DE4902F4D8F9C188 /* AAAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AAAlertController.m; sourceTree = "<group>"; };
-		1525E25B1EA0C4780067BD3B /* AABaseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABaseTransition.h; sourceTree = "<group>"; };
-		1525E25C1EA0C4780067BD3B /* AABaseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AABaseTransition.m; sourceTree = "<group>"; };
-		1525E25F1EA0C5120067BD3B /* AAFadeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAFadeTransition.h; sourceTree = "<group>"; };
-		1525E2601EA0C5120067BD3B /* AAFadeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAFadeTransition.m; sourceTree = "<group>"; };
-		1525E2631EA0C5200067BD3B /* AABounceTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABounceTransition.h; sourceTree = "<group>"; };
-		1525E2641EA0C5200067BD3B /* AABounceTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AABounceTransition.m; sourceTree = "<group>"; };
+		0E8ECD360AC6B70D899A2D0E95426D17 /* AABaseTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AABaseTransition.h; sourceTree = "<group>"; };
+		1561172D1EA0D2B3004053AD /* AABounceTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABounceTransition.h; sourceTree = "<group>"; };
+		1561172E1EA0D2B3004053AD /* AABounceTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AABounceTransition.m; sourceTree = "<group>"; };
+		1B7E8A3B83D786E781B8BF9B4F36CCE5 /* AABaseTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AABaseTransition.m; sourceTree = "<group>"; };
 		29C5D0E711ED228DD4070D6C6771F6EC /* libAAAlertController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAAAlertController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EE019BD04F52F077126751CEA44CB4 /* libPods-AAAlertController_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AAAlertController_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ABEBCBA0A0DFA5A74F492F75FA1BE50 /* AAAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AAAlertController.h; sourceTree = "<group>"; };
 		47A22781AD4260E3FBA1EA8AD62DD090 /* Pods-AAAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		53DEA51EE3510E0DE6E6391460C816B7 /* AAFadeTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AAFadeTransition.h; sourceTree = "<group>"; };
+		578EDE912F39374983181F0B59BF55F4 /* AAAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AAAlertController.m; sourceTree = "<group>"; };
 		5AB458BA12790DCF8952CD9F56D49FB9 /* Pods-AAAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5BCF0E0850DAF3C01E155A08A410977A /* Pods-AAAlertController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAAlertController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5BD8A805E5B4E7201B28B436502DB72A /* AAAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AAAlertController.h; sourceTree = "<group>"; };
 		662ACCDDE6F3DEB1824056DA7F33B773 /* libPods-AAAlertController_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AAAlertController_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CF912A957A23F5EC55942484E8311D /* AAAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAAlertController-prefix.pch"; sourceTree = "<group>"; };
 		79FBA80980AE18A5C330CBBFBF80E548 /* Pods-AAAlertController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAAlertController_Example-dummy.m"; sourceTree = "<group>"; };
@@ -64,22 +63,23 @@
 		DA420414BBAFF43703235B257EF71AC0 /* Pods-AAAlertController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAAlertController_Tests-dummy.m"; sourceTree = "<group>"; };
 		E3359772565B2DA323042AE870229632 /* Pods-AAAlertController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAAlertController_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E769303DF9717D604EA97A0FAFC357B0 /* Pods-AAAlertController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAAlertController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EE00C101FA613C762F737E172AFE5F21 /* AAFadeTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AAFadeTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D4EC51AE985F392D0BC760BFC2C2CA10 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0BA8718F431823A8D4D8CEE8861A5E24 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E297633837E1A9BF4BB9FFD89186FED6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				355C20A5CDDEC9A7FBA7DDC52F2BB409 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E321DDC323AD51F01EE2968ECE268573 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92704E0317203D970B86E8439AB30E06 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		059C48E37F4C895E4A2977041329041A /* AAAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				DD087431C29E2393C836E81D85AA163B /* Classes */,
+			);
+			path = AAAlertController;
+			sourceTree = "<group>";
+		};
 		09364F3C7D87A70346451DCF1516C4AA /* Pods-AAAlertController_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +131,7 @@
 		27CAD70BF7855890E6BACA9E1EDC1678 /* AAAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				E4211FC9A880CDC0DFCCEC109DFCBEBB /* AAAlertController */,
+				059C48E37F4C895E4A2977041329041A /* AAAlertController */,
 				1E94811BECA84E8611A41ECF211A5BAE /* Support Files */,
 			);
 			name = AAAlertController;
@@ -199,63 +207,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DDC737B055C32CACAC810BBF25B2AD80 /* Classes */ = {
+		DD087431C29E2393C836E81D85AA163B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5BD8A805E5B4E7201B28B436502DB72A /* AAAlertController.h */,
-				02A3B54EF0624E84DE4902F4D8F9C188 /* AAAlertController.m */,
-				1525E25B1EA0C4780067BD3B /* AABaseTransition.h */,
-				1525E25C1EA0C4780067BD3B /* AABaseTransition.m */,
-				1525E25F1EA0C5120067BD3B /* AAFadeTransition.h */,
-				1525E2601EA0C5120067BD3B /* AAFadeTransition.m */,
-				1525E2631EA0C5200067BD3B /* AABounceTransition.h */,
-				1525E2641EA0C5200067BD3B /* AABounceTransition.m */,
+				3ABEBCBA0A0DFA5A74F492F75FA1BE50 /* AAAlertController.h */,
+				578EDE912F39374983181F0B59BF55F4 /* AAAlertController.m */,
+				0E8ECD360AC6B70D899A2D0E95426D17 /* AABaseTransition.h */,
+				1B7E8A3B83D786E781B8BF9B4F36CCE5 /* AABaseTransition.m */,
+				53DEA51EE3510E0DE6E6391460C816B7 /* AAFadeTransition.h */,
+				EE00C101FA613C762F737E172AFE5F21 /* AAFadeTransition.m */,
+				1561172D1EA0D2B3004053AD /* AABounceTransition.h */,
+				1561172E1EA0D2B3004053AD /* AABounceTransition.m */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		E4211FC9A880CDC0DFCCEC109DFCBEBB /* AAAlertController */ = {
-			isa = PBXGroup;
-			children = (
-				DDC737B055C32CACAC810BBF25B2AD80 /* Classes */,
-			);
-			path = AAAlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F2A1BBF74216D78D03C59C38D66995E4 /* Headers */ = {
+		053B8F0FEE8D47037A2312C0396A95C3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1525E2611EA0C5120067BD3B /* AAFadeTransition.h in Headers */,
-				1525E25D1EA0C4780067BD3B /* AABaseTransition.h in Headers */,
-				9E639F6D986EBCBF42892CA310DB29F9 /* AAAlertController.h in Headers */,
-				1525E2651EA0C5200067BD3B /* AABounceTransition.h in Headers */,
+				5CEF2830DA2CA5CB8670242CD50CF429 /* AAAlertController.h in Headers */,
+				70664FA970F33C2FDA65D86C8F8DF7F5 /* AABaseTransition.h in Headers */,
+				95826856D24DB56662E45839803B66FF /* AAFadeTransition.h in Headers */,
+				1561172F1EA0D2B3004053AD /* AABounceTransition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		66BCFB66EA5E1DC248420BECC681A3A2 /* AAAlertController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6F7081D504638AD9EEAECC3578D945D1 /* Build configuration list for PBXNativeTarget "AAAlertController" */;
-			buildPhases = (
-				406CE37960C221D5131B6BC5C5CA35C5 /* Sources */,
-				D4EC51AE985F392D0BC760BFC2C2CA10 /* Frameworks */,
-				F2A1BBF74216D78D03C59C38D66995E4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AAAlertController;
-			productName = AAAlertController;
-			productReference = 29C5D0E711ED228DD4070D6C6771F6EC /* libAAAlertController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		7BA3AB7D5FDA264BCB94CCFB00211468 /* Pods-AAAlertController_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3161FDA608582CE3DB5888DD4666D11 /* Build configuration list for PBXNativeTarget "Pods-AAAlertController_Example" */;
@@ -271,6 +254,23 @@
 			name = "Pods-AAAlertController_Example";
 			productName = "Pods-AAAlertController_Example";
 			productReference = 662ACCDDE6F3DEB1824056DA7F33B773 /* libPods-AAAlertController_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		890EEBB4278F4661A24FF7A837F2B398 /* AAAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A992F677F406AF090F8B9019D705D4 /* Build configuration list for PBXNativeTarget "AAAlertController" */;
+			buildPhases = (
+				729F3281AA7A749471F2623FF89C8D46 /* Sources */,
+				E321DDC323AD51F01EE2968ECE268573 /* Frameworks */,
+				053B8F0FEE8D47037A2312C0396A95C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AAAlertController;
+			productName = AAAlertController;
+			productReference = 29C5D0E711ED228DD4070D6C6771F6EC /* libAAAlertController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A20766D1F5D7ED3D7ED9F2E6A4A7C8D7 /* Pods-AAAlertController_Tests */ = {
@@ -310,7 +310,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66BCFB66EA5E1DC248420BECC681A3A2 /* AAAlertController */,
+				890EEBB4278F4661A24FF7A837F2B398 /* AAAlertController */,
 				7BA3AB7D5FDA264BCB94CCFB00211468 /* Pods-AAAlertController_Example */,
 				A20766D1F5D7ED3D7ED9F2E6A4A7C8D7 /* Pods-AAAlertController_Tests */,
 			);
@@ -326,23 +326,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		406CE37960C221D5131B6BC5C5CA35C5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C8C5BAD52F40E8211EE120F81621AFC /* AAAlertController-dummy.m in Sources */,
-				1525E25E1EA0C4780067BD3B /* AABaseTransition.m in Sources */,
-				1525E2621EA0C5120067BD3B /* AAFadeTransition.m in Sources */,
-				1525E2661EA0C5200067BD3B /* AABounceTransition.m in Sources */,
-				2E4DC5649EBDC361385F36D62D4B4CFE /* AAAlertController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		455EAFB22EE9986754D4FB6F0F9780CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C632BC7424351078016C5C4D72F2F985 /* Pods-AAAlertController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729F3281AA7A749471F2623FF89C8D46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B531DE738FD42F4544C06AFDF8ED7B /* AAAlertController-dummy.m in Sources */,
+				0C6F68465C463D279017F6AA1D9C3A93 /* AAAlertController.m in Sources */,
+				08430CD9C52283CABB5672D8D57BF553 /* AABaseTransition.m in Sources */,
+				156117301EA0D2B3004053AD /* AABounceTransition.m in Sources */,
+				F6B51D23BEA8AA1903DFF2DBE59F9EF0 /* AAFadeTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,35 +352,12 @@
 		0137EA29D912638511F5C59D1DC826B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AAAlertController;
-			target = 66BCFB66EA5E1DC248420BECC681A3A2 /* AAAlertController */;
+			target = 890EEBB4278F4661A24FF7A837F2B398 /* AAAlertController */;
 			targetProxy = 706B9B8855C2BC9492370856E35A7601 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		16B8F1D291DBECB2EAC59A7B3F11F796 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A2679B4E27F9CC178C26F89361B085B /* AAAlertController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AAAlertController/AAAlertController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		35E9513384EAE082EDEB4AE3CF1ED2CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0BA26777F9AB7757C5CFD8080D2204F /* Pods-AAAlertController_Tests.release.xcconfig */;
@@ -422,29 +399,6 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5F12D0785197FFF84BECFE5A4C79B93B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A2679B4E27F9CC178C26F89361B085B /* AAAlertController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AAAlertController/AAAlertController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -580,9 +534,64 @@
 			};
 			name = Debug;
 		};
+		C6E12B118C0E71863E08A44E04531873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A2679B4E27F9CC178C26F89361B085B /* AAAlertController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AAAlertController/AAAlertController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D04EB85AE97E4BA6330CD17D86FA8E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A2679B4E27F9CC178C26F89361B085B /* AAAlertController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AAAlertController/AAAlertController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00A992F677F406AF090F8B9019D705D4 /* Build configuration list for PBXNativeTarget "AAAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04EB85AE97E4BA6330CD17D86FA8E36 /* Debug */,
+				C6E12B118C0E71863E08A44E04531873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -597,15 +606,6 @@
 			buildConfigurations = (
 				4B35EB0E974E0E70B18955470E3CCAB2 /* Debug */,
 				35E9513384EAE082EDEB4AE3CF1ED2CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6F7081D504638AD9EEAECC3578D945D1 /* Build configuration list for PBXNativeTarget "AAAlertController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F12D0785197FFF84BECFE5A4C79B93B /* Debug */,
-				16B8F1D291DBECB2EAC59A7B3F11F796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
