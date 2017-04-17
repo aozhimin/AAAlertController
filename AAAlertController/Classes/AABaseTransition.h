@@ -11,34 +11,37 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- 展示过渡动效的基类
+ The root class of transition class hierarchies, from which subclasses inherit the ability to implement the animations for a custom view controller transition.
  */
 @interface AABaseTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
 /**
- 是否正在展示
+ Whether The view controller is presenting.
  */
 @property (nonatomic, assign) BOOL isPresenting;
 
 /**
- 过渡动效的时间间隔
- 
- @param transitionContext 过渡环境
- @return 返回过渡动效的时间间隔
+ Asks your animator object for the duration (in seconds) of the transition animation.
+ @param transitionContext The context object containing information to use during the transition.
+ @return The duration, in seconds, of your custom transition animation.
  */
 - (NSTimeInterval)transitionDuration:(nullable id<UIViewControllerContextTransitioning>)transitionContext;
 
 /**
- 控制展示时的动效
+ Transition animation when is presenting the view controller
  
- @param transitionContext 过渡环境
+ @param transitionContext The context object containing information to use during the transition.
+ 
+ @attentions This method will be invoked in animateTransition: method if the isPresenting property is YES.
  */
 - (void)presentAnimateTransition:(nullable id<UIViewControllerContextTransitioning>)transitionContext;
 
 /**
- 控制消失时的动效
+ Transition animation when is dismissing the view controller
  
- @param transitionContext 过渡环境
+ @param transitionContext The context object containing information to use during the transition.
+ 
+ @attentions This method will be invoked in animateTransition: method if the isPresenting property is NO.
  */
 - (void)dismissAnimateTransition:(nullable id<UIViewControllerContextTransitioning>)transitionContext;
 

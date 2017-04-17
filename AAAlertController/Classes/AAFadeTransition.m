@@ -16,16 +16,25 @@ static NSTimeInterval const kFadeAnimationDuration = 0.15f;
 - (void)presentAnimateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     AAAlertController *alertController  =
     (AAAlertController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    alertController.backgroundView.alpha = 0.0;
-    alertController.contentView.alpha    = 0.0;
+    
+    if (alertController.preferredStyle == AAAlertStyleAlert) {
+        alertController.backgroundView.alpha = 0.0;
+        alertController.contentView.alpha = 0.0;
+    } else if (alertController.preferredStyle == AAAlertStyleStyleActionSheet) {
+        alertController.contentView.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight(alertController.contentView.frame));
+    }
+    
     UIView *containerView = [transitionContext containerView];
     [containerView addSubview:alertController.view];
     [UIView animateWithDuration:kFadeAnimationDuration
                           delay:0
                         options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
-                         alertController.backgroundView.alpha = 1.0;
-                         alertController.contentView.alpha    = 1.0;
+                         if (alertController.preferredStyle == AAAlertStyleAlert) {
+                             alertController.backgroundView.alpha  = 1.0;
+                             alertController.contentView.alpha     = 1.0;
+                         }
+                         alertController.contentView.transform = CGAffineTransformIdentity;
                      }
                      completion:^(BOOL finished) {
                          [transitionContext completeTransition:YES];
@@ -39,8 +48,12 @@ static NSTimeInterval const kFadeAnimationDuration = 0.15f;
                           delay:0
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         alertController.backgroundView.alpha = 0.0;
-                         alertController.contentView.alpha    = 0.0;
+                         if (alertController.preferredStyle == AAAlertStyleAlert) {
+                             alertController.backgroundView.alpha = 0.0;
+                             alertController.contentView.alpha    = 0.0;
+                         } else if (alertController.preferredStyle == AAAlertStyleStyleActionSheet) {
+                             alertController.contentView.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight(alertController.contentView.frame));
+                         }
                      }
                      completion:^(BOOL finished) {
                          [transitionContext completeTransition:YES];

@@ -59,7 +59,7 @@ typedef NS_ENUM(NSInteger, AAAlertStyle) {
 @property (nonatomic, strong) UIViewController *contentViewController;
 
 /**
- wheather dismiss or not when user click the background view
+ whether dismiss or not when user click the background view
  */
 @property (nonatomic, assign, getter=canBackgroundDismiss) BOOL backgroundDismiss;
 

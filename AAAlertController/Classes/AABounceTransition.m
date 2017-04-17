@@ -7,7 +7,6 @@
 //
 
 #import "AABounceTransition.h"
-
 #import "AAAlertController.h"
 
 static CGFloat const kBounceAnimationSpringDamping           = 0.8f;
@@ -22,11 +21,21 @@ static NSTimeInterval const kBounceAnimationDismiss2Duration = kBounceAnimationD
 @implementation AABounceTransition
 
 - (void)presentAnimateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
-    AAAlertController *alertController   =
+    AAAlertController *alertController  =
     (AAAlertController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    alertController.backgroundView.alpha  = 0.0;
-    alertController.contentView.alpha     = 0.0;
-    alertController.contentView.transform = CGAffineTransformMakeScale(kTransformScaleSmall, kTransformScaleSmall);
+    switch (alertController.preferredStyle) {
+        case AAAlertStyleAlert:
+            alertController.backgroundView.alpha  = 0.0;
+            alertController.contentView.alpha     = 0.0;
+            alertController.contentView.transform = CGAffineTransformMakeScale(kTransformScaleSmall, kTransformScaleSmall);
+            break;
+        case AAAlertStyleStyleActionSheet:
+            alertController.contentView.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight(alertController.contentView.frame));
+            break;
+        default:
+            break;
+    }
+    
     UIView *containerView                 = [transitionContext containerView];
     [containerView addSubview:alertController.view];
     [UIView animateWithDuration:kBounceAnimationPresentDuration
@@ -35,8 +44,10 @@ static NSTimeInterval const kBounceAnimationDismiss2Duration = kBounceAnimationD
           initialSpringVelocity:kBounceAnimationSpringVelocity
                         options:UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionTransitionNone
                      animations:^{
-                         alertController.backgroundView.alpha  = 1.0;
-                         alertController.contentView.alpha     = 1.0;
+                         if (alertController.preferredStyle == AAAlertStyleAlert) {
+                             alertController.backgroundView.alpha  = 1.0;
+                             alertController.contentView.alpha     = 1.0;
+                         }
                          alertController.contentView.transform = CGAffineTransformIdentity;
                      }
                      completion:^(BOOL finished) {
@@ -58,9 +69,13 @@ static NSTimeInterval const kBounceAnimationDismiss2Duration = kBounceAnimationD
                                                delay:0
                                              options:UIViewAnimationOptionCurveEaseIn
                                           animations:^(void){
-                                              alertController.backgroundView.alpha = 0.0;
-                                              alertController.contentView.alpha = 0.0;
-                                              alertController.contentView.transform = CGAffineTransformMakeScale(kTransformScaleSmall, kTransformScaleSmall);
+                                              if (alertController.preferredStyle == AAAlertStyleAlert) {
+                                                  alertController.backgroundView.alpha = 0.0;
+                                                  alertController.contentView.alpha = 0.0;
+                                                  alertController.contentView.transform = CGAffineTransformMakeScale(kTransformScaleSmall, kTransformScaleSmall);
+                                              } else if (alertController.preferredStyle == AAAlertStyleStyleActionSheet) {
+                                                  alertController.contentView.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight(alertController.contentView.frame));
+                                              }
                                           }
                                           completion:^(BOOL finished) {
                                               [transitionContext completeTransition:YES];
