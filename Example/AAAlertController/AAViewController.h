@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface AAViewController : UITableViewController
+@interface AAViewController : UIViewController
 
 @end

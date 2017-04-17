@@ -1,20 +1,20 @@
 //
-//  AAPresentViewController.m
+//  AAAlertStyleViewController.m
 //  AAAlertController
 //
-//  Created by dev-aozhimin on 17/4/14.
+//  Created by dev-aozhimin on 17/4/17.
 //  Copyright © 2017年 aozhimin. All rights reserved.
 //
 
-#import "AAPresentViewController.h"
+#import "AAAlertStyleViewController.h"
 
-@interface AAPresentViewController ()
+@interface AAAlertStyleViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *closeImageView;
 
 @end
 
-@implementation AAPresentViewController
+@implementation AAAlertStyleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
