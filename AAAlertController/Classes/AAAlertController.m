@@ -19,26 +19,35 @@ static CGFloat const kDefaultBackgroundViewAlpha = 0.5f;
 @interface AAAlertController ()
 
 @property (nonatomic, assign) AAAlertAnimationOptions animationOption;
-@property (nonatomic, strong) AABaseTransition       *transition;
-@property (nonatomic, assign) UIDeviceOrientation      originalOrientation;
+@property (nonatomic, strong) AABaseTransition        *transition;
+@property (nonatomic, assign) UIDeviceOrientation     originalOrientation;
 
 @end
 
 @implementation AAAlertController
 
+- (instancetype)initWithContentViewController:(UIViewController *)viewController {
+    return [self initWithContentViewController:viewController
+                            andAnimationOption:AAAlertAnimationOptionFade];
+}
+
 - (instancetype)initWithContentViewController:(UIViewController *)viewController
+                           andAnimationOption:(AAAlertAnimationOptions)animationOption {
+    return [self initWithContentViewController:viewController
+                             andPreferredStyle:AAAlertStyleAlert
+                            andAnimationOption:animationOption];
+}
+
+- (instancetype)initWithContentViewController:(UIViewController *)viewController
+                            andPreferredStyle:(AAAlertStyle)preferredStyle
                            andAnimationOption:(AAAlertAnimationOptions)animationOption {
     if (self = [self initWithNibName:nil bundle:nil]) {
         _contentViewController = viewController;
         _animationOption       = animationOption;
+        _preferredStyle        = preferredStyle;
         [self p_setup];
     }
     return self;
-}
-
-- (instancetype)initWithContentViewController:(UIViewController *)viewController {
-    return [self initWithContentViewController:viewController
-                            andAnimationOption:AAAlertAnimationOptionFade];
 }
 
 - (void)dealloc {
@@ -72,7 +81,13 @@ static CGFloat const kDefaultBackgroundViewAlpha = 0.5f;
 - (void)p_addContentViewController {
     [self addChildViewController:self.contentViewController];
     [self.view addSubview:self.contentViewController.view];
-    self.contentViewController.view.center = self.view.center;
+    if (self.preferredStyle == AAAlertStyleAlert) {
+        self.contentViewController.view.center = self.view.center;
+    } else if (self.preferredStyle == AAAlertStyleStyleActionSheet) {
+        self.contentViewController.view.center =
+        CGPointMake(DEVICE_FULL_SIZE_WIDTH / 2,
+                    DEVICE_FULL_SIZE_HEIGHT - CGRectGetHeight(self.contentViewController.view.bounds) / 2);
+    }
     [self.contentViewController didMoveToParentViewController:self];
     self.contentView = self.contentViewController.view;
 }
