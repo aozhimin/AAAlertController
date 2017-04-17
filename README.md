@@ -8,7 +8,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/AAAlertController.svg?style=flat)](http://cocoapods.org/pods/AAAlertController)
 
 # Overview
-`AAAlertController` is a lightweight UI component to present a popup style dialog, it's easy to use and integrate in your project. The API is just like `UIAlertController` which you will see the usage in demo
+`AAAlertController` is a lightweight UI component to present a popup style dialog, it provide alert style and action sheet style. It's easy to use and integrate in your project. The API is just like `UIAlertController` which you will see the usage in demo
 
 ## Sample project
 We provided sample project, To run the it, after you clone the repo, open the workspace file.
@@ -37,12 +37,29 @@ pod install
 ## Usage
 (see the usage which I put in the sample project)
 
+### AAAlertStyleAlert
+
 ```objective-c
     AAPresentViewController *popupVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
-                                        instantiateViewControllerWithIdentifier:@"AAPresentViewController"];
-    popupVC.view.frame = CGRectMake(0, 0, 300, 300);
-    AAAlertController *alertController = [[AAAlertController alloc] initWithContentViewController:popupVC
-                                                                               andAnimationOption:animationOption];
+                                        instantiateViewControllerWithIdentifier:@"AAAlertStyleViewController"];
+        popupVC.view.frame = CGRectMake(0, 0, 300, 280);
+    AAAlertController *alertController =
+    [[AAAlertController alloc] initWithContentViewController:popupVC
+                                           andPreferredStyle:AAAlertStyleAlert
+                                          andAnimationOption:animationOption];
+    [self presentViewController:alertController animated:YES completion:nil];
+```
+
+### AAAlertStyleStyleActionSheet
+
+```objective-c
+    AAPresentViewController *popupVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
+                                        instantiateViewControllerWithIdentifier:@"AAActionSheetStyleViewController"];
+        popupVC.view.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 200);
+    AAAlertController *alertController =
+    [[AAAlertController alloc] initWithContentViewController:popupVC
+                                           andPreferredStyle: AAAlertStyleStyleActionSheet
+                                          andAnimationOption:animationOption];
     [self presentViewController:alertController animated:YES completion:nil];
 ```
 
