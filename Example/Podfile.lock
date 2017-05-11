@@ -1,16 +1,19 @@
 PODS:
-  - AAAlertController (0.1.0)
+  - AAAlertController (0.2.0)
+  - uiview-position (0.1.0)
 
 DEPENDENCIES:
   - AAAlertController (from `../`)
+  - uiview-position
 
 EXTERNAL SOURCES:
   AAAlertController:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AAAlertController: b2e1a8327909b0c4e787ccc79e9e7a5a56d05ff3
+  AAAlertController: 0959de56c2af891789532e2f48419c4929eac662
+  uiview-position: 555e00052314a874155e64dd68d727cff85ba528
 
-PODFILE CHECKSUM: 9f71f0916da471f5ce77f7f3fb9a3528cc4d7dfc
+PODFILE CHECKSUM: d48f6a25bdc84620ee3fd3dba0289414e388e609
 
 COCOAPODS: 1.2.0.beta.1

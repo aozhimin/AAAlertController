@@ -1,6 +1,7 @@
 
 target 'AAAlertController_Example' do
   pod 'AAAlertController', :path => '../'
+  pod 'uiview-position'
 
   target 'AAAlertController_Tests' do
     inherit! :search_paths
