@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AAAlertController'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'AAAlertController is extension of the UIAlertController, provide custom styles and animations Edit
 Add topics'
   s.description      = <<-DESC
