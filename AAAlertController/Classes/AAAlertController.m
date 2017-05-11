@@ -20,7 +20,7 @@ static CGFloat const kDefaultBackgroundViewAlpha = 0.5f;
 
 @property (nonatomic, assign) AAAlertAnimationOptions animationOption;
 @property (nonatomic, strong) AABaseTransition        *transition;
-@property (nonatomic, assign) UIDeviceOrientation     originalOrientation;
+@property (nonatomic, assign) UIInterfaceOrientation  originalOrientation;
 
 @end
 
@@ -65,15 +65,15 @@ static CGFloat const kDefaultBackgroundViewAlpha = 0.5f;
     self.definesPresentationContext                 = YES;
     self.modalPresentationStyle                     = UIModalPresentationCustom;
     self.transitioningDelegate                      = self;
-    self.originalOrientation                        = [UIDevice currentDevice].orientation;
+    self.originalOrientation                        = [UIApplication sharedApplication].statusBarOrientation;
     __weak typeof(self) weakSelf = self;
-    [[NSNotificationCenter defaultCenter] addObserverForName:UIDeviceOrientationDidChangeNotification
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidChangeStatusBarOrientationNotification
                                                       object:nil
                                                        queue:nil
                                                   usingBlock:^(NSNotification * _Nonnull note) {
-                                                      if (self.originalOrientation != [UIDevice currentDevice].orientation) {
+                                                      if (self.originalOrientation != [UIApplication sharedApplication].statusBarOrientation) {
                                                           weakSelf.contentViewController.view.center = weakSelf.view.center;
-                                                          weakSelf.originalOrientation = [UIDevice currentDevice].orientation;
+                                                          weakSelf.originalOrientation = [UIApplication sharedApplication].statusBarOrientation;
                                                       }
                                                   }];
 }
